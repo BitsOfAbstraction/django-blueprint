@@ -1,4 +1,3 @@
-import logging
 import uuid
 from typing import Any
 
@@ -8,8 +7,6 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 from .managers import SingletonManager, SoftDeletableManager
-
-logger = logging.getLogger(__name__)
 
 
 class UUIDModel(models.Model):

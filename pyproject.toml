@@ -9,17 +9,15 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "rich",
     "jsonschema (>=4.26.0,<5.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "headless"}]
+packages = [{include = "blueprint"}]
 
 [tool.poetry.group.dev.dependencies]
-black = "^25.1.0"
+black = "^26.1.0"
 Django= "^6.0.2"
-djangorestframework= "^3.16.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
